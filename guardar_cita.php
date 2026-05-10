@@ -1,6 +1,6 @@
 <?php
 session_start();  // 1. Incluimos la conexión que hiciste antes
-include("conexion.php");
+include("conexion_bd.php");
 
 // 2. Recogemos los datos del formulario
 $medico = $_POST['medico'];
@@ -15,7 +15,7 @@ $sql = "INSERT INTO citas (nombre_medico, fecha, hora, usuario_id)
 // 4. Ejecutamos la orden
 if (mysqli_query($conexion, $sql)) {
     echo "<h2>¡Cita guardada con éxito!</h2>";
-    echo "<a href='portal.php'> Volver atrás </a>";
+    echo "<a href='pedir_cita.php'> Volver atrás </a>";
 } else {
     echo "Error al guardar la cita: " . mysqli_error($conexion);
 }
