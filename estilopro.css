@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgba(10, 10, 10, 0.3);
+    margin: 0 auto;
+}
+
+td, th{
+    padding: 20px;
+}
